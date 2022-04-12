@@ -4,13 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Code Trivia Challenge</title>
     <link rel="stylesheet" href="style.css">
+    <title>Code Trivia Challenge</title>
   </head>
   <body>
+    <!--header area contains view highscores and and coundown of the quiz-->
       <header>
-          <a>View Highscores</a>
-      </header>
-	<script src="index.js"></script>
+        <div class="highscore-view">
+          <a href="highscores.html">View Highscores</a>  
+        </div>
+        <!--time count-->
+        <div class="time-view">
+        Time: <span> 0 </span>
+        </div>
+        </header>
+
+        <!--This will contain the start section-->
+    <section class="quiz-start">
+      
+      <div class="quiz-intro">
+        <h1>Easy Coding Trivia</h1>
+        
+        <p>Answer all the questions in this quiz within the time limit.<br>
+          Your time limit will be your score <br>
+        Answer them wrong and your time limit will be penalized by ten seconds.</p>
+          <button class="start-btn"> Start Quiz!</button>
+      </div>
+    </section>
+
+    <!--Quiz Section-->
+      <section class = "question-view">
+          <div class="question-box" >
+          </div>
+          <br>
+          <div class="answer-choices" >
+          </div>
+          <br>
+          <div id="result-display">
+          </div>
+      </section>
+
+      <!--User Result Section-->
+      <section >
+        <div>
+          <h2>All Done!</h2>
+          <div>
+            Your score is <span class="userScore"></span>
+          </div>
+        </div>
+        <!--Contains HighScores-->
+        <div class="highscores">
+          <div>Enter Your Initials</div>
+          <input type="text" id="userInitial" href="">
+        </div>
+      </section>
+
+    
+
+	<script src="script.js"></script>
   </body>
 </html>
