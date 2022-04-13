@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Code Trivia Challenge</title>
   </head>
   <body>
     <!--header area contains view highscores and and coundown of the quiz-->
-      <header>
-        <div class="highscore-view">
+      <header class="top-section">
+        <div class="highscore-view" id="highscores">
           <a href="highscores.html">View Highscores</a>  
         </div>
         <!--time count-->
-        <div class="time-view">
+        <div id="time-view">
         Time: <span> 0 </span>
         </div>
         </header>
@@ -28,7 +28,7 @@
         <p>Answer all the questions in this quiz within the time limit.<br>
           Your time limit will be your score <br>
         Answer them wrong and your time limit will be penalized by ten seconds.</p>
-          <button class="start-btn"> Start Quiz!</button>
+          <button id="start-btn"> Start Quiz!</button>
       </div>
     
 
@@ -40,14 +40,14 @@
           <div class="answer-choices" >
           </div>
           <br>
-          <div id="result-display">
+          <div class="result-display">
           </div>
       </div>
     </section>
 
 
       <!--User Result Section-->
-      <section >
+      <section class="result-section" >
         <div>
           <h2>All Done!</h2>
           <div>
@@ -56,7 +56,7 @@
         </div>
         <!--Contains HighScores-->
         <div class="highscores">
-          <div>Enter Your Initials</div>
+          <div>Enter Your Initials:</div>
           <input type="text" id="userInitial" name="userInitial">
           <button class="sumbit-btn" type="sumbit" href="highscores.html">Submit!</button>
         </div>

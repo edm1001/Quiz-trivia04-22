@@ -27,4 +27,16 @@ const questions = [
     },
 ];
 
-//Setting variables to add the html elements
+//Getting variables and link the html elements
+const startBtn = document.querySelector('#start-btn');
+const timeLeft=  document.querySelector('#time-view');
+const quizPanel = document.querySelector('.quiz-intro');
+startBtn.addEventListener('click', startQuiz);
+//Start the quiz function 
+function startQuiz(){
+
+}
+
+//Make variables for the questions
+//Set a condition to subtract points if user answers wrong
+//Set a condition that every question has a time limit

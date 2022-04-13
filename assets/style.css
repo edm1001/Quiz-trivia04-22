@@ -1,0 +1,31 @@
+:root{
+    font-size: 20px;
+}
+.top-section{
+    display:flex;
+    justify-content:space-between ;
+}
+.quiz-intro{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+button {
+    background-color: purple;
+    color: white;
+    padding:10px;
+}
+#question-view {
+    font-weight: bold;
+    text-align: center;
+}
+.result-section {
+    font-weight: bold;
+    text-align: center;
+}
+
+li {
+    background-color: purple;
+    text-align: left;
+}
