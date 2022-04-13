@@ -16,7 +16,7 @@ const questions = [
         answer:"[] Brackets"
     },
     {
-        title:"What is the HTML tag that can link other files or sites",
+        title:"What HTML tag can link other files or sites",
         choices:["<a>","<h1>","<p>","<href>"],
         answer:"<href>"
     },
@@ -32,11 +32,37 @@ const startBtn = document.querySelector('#start-btn');
 const timeLeft=  document.querySelector('#time-view');
 const quizPanel = document.querySelector('.quiz-intro');
 startBtn.addEventListener('click', startQuiz);
+
+//Make variables for the questions
+const quizContent = document.createElement("#list");
+const questionNumbers = questions.length;
+const penalty = 10;
+const number =0;//
+
+//Make the question appear to the page
+function showQuestions(number) {
+    quizContentEl.innerHTML ="";
+    lisquizContent.innerHTML ="";
+    const questionTitle = questions[number].title;
+    const questionChoices = questions[number].choices;
+
+    //make a for loop on the array
+    for (let i=0; i<questionNumbers; i++) {
+        //append question title
+    }
+}
 //Start the quiz function 
 function startQuiz(){
+    quizPanel.innerHTML = "";
+    quizContent.innerHTML = "";
+    //reset the existing data
+    //countdown function
+    //call question function to display the questions and answer choices
 
 }
 
-//Make variables for the questions
+//Set a condition for 15 seconds for every question
+
 //Set a condition to subtract points if user answers wrong
+
 //Set a condition that every question has a time limit
