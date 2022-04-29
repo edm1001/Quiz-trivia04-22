@@ -31,34 +31,42 @@ const questions = [
 const startBtn = document.querySelector('#start-btn');
 const timeLeft=  document.querySelector('#time-view');
 const quizPanel = document.querySelector('.quiz-intro');
+
 startBtn.addEventListener('click', startQuiz);
 
 //Make variables for the questions
-const quizContent = document.createElement("#list");
-const questionNumbers = questions.length;
-const penalty = 10;
-const number =0;//
-
-//Make the question appear to the page
-function showQuestions(number) {
-    quizContentEl.innerHTML ="";
-    lisquizContent.innerHTML ="";
-    const questionTitle = questions[number].title;
-    const questionChoices = questions[number].choices;
-
-    //make a for loop on the array
-    for (let i=0; i<questionNumbers; i++) {
-        //append question title
-    }
-}
+const quizContent = document.createElement("#questionsList");
+const totalQuestions = questions.length;
+const questionNum =0;//start of question
+const quizResult = document.querySelector("#result-page");
+const userPoints = document.querySelector(".user-score");
+const submitQuiz = document.querySelector("#submit-btn");
+userPoints.setAttribute("type", "text");
+const penalty = 10;//must be put to 
 //Start the quiz function 
-function startQuiz(){
+function startQuiz() {
     quizPanel.innerHTML = "";
     quizContent.innerHTML = "";
-    //reset the existing data
+    //reset the existing data after every question
+    startQuestions();
+
+//Make the question appear to the page
+function startQuestions(questionNum) {
+    quizContent.innerHTML ="";
+    quizContent.innerHTML ="";
+    let questionTitle = questions[questionNum].title;
+    let questionChoices = questions[questionNum].choices;
+
+    //make a for loop on the array
+    for (let i=0; i<totalQuestions; i++) {
+        //append question title
+    
+    }
+}
+
     //countdown function
     //call question function to display the questions and answer choices
-
+    showQuestions(questionNum);
 }
 
 //Set a condition for 15 seconds for every question
@@ -66,3 +74,4 @@ function startQuiz(){
 //Set a condition to subtract points if user answers wrong
 
 //Set a condition that every question has a time limit
+//when i click start quiz it leads to going into a different page
