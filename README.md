@@ -8,3 +8,6 @@
 - When I answer wrong, time is subtracted by 5 seconds.
 - Game is over when questions finish or timer is 0
 - Save your score by adding initials or go back to try again.
+
+
+![codequiz-live](https://user-images.githubusercontent.com/95250008/169672650-9d80665b-a667-4861-958a-f4b27ad0112b.png)
