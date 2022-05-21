@@ -11,3 +11,6 @@
 
 
 ![codequiz-live](https://user-images.githubusercontent.com/95250008/169672650-9d80665b-a667-4861-958a-f4b27ad0112b.png)
+
+##Github Pages
+https://edm1001.github.io/Quiz-trivia04-22/
