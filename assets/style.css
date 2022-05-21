@@ -1,14 +1,19 @@
 :root{
     font-size: 20px;
 }
+body{
+    height:100%;
+}
 .top-section{
     display:flex;
     justify-content:space-between ;
 }
-.quiz-intro{
+.quiz-intro, .question-box, .result-page {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
+    height:100vh;
 }
 
 button {
@@ -19,7 +24,7 @@ button {
     border: 10px;
     margin:5px;
 }
-#question-view, .result-view, .result-page {
+#question-view, .result-view, .result-page, .question-box {
     font-weight: bold;
     text-align: center;
 }

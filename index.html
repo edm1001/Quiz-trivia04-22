@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,15 +27,29 @@
         <h1>Easy Coding Trivia</h1>
         
         <p>Answer all the questions in this quiz within the time limit.<br>
-          Your time limit will be your score <br>
-        Answer them wrong and your time limit will be penalized by ten seconds.</p>
-          <!--quiz div-->
-        <div id="questionsLists">
-        </div>
+        Answer them wrong and your score will be penalized.</p>
           <button id="start-btn"> Start Quiz!</button>
       </div>
-    
-    </section>
+        </section>
+
+        <!--quiz div-->
+       <div class="question-box" > <!--test format-->
+        <div id="question"><!--question title-->
+        </div>
+        <div id="answers-box"><!--multiple choice-->  
+         <button id="choiceA"></button>
+         <button id="choiceB"></button>
+         <button id="choiceC"></button>
+         <button id="choiceD"></button>
+      
+        </div>
+        <div>
+          <div id="correct-answer">
+          </div>
+        </div>
+        <button class="next-button"></button>
+      </div> 
+  
 
 
       <!--User Result Section-->
@@ -42,7 +57,8 @@
         <div>
           <h2>All Done!</h2>
           <div>
-            Your score is <span class="user-score"></span>
+          <h3>  Your score is </h3> 
+          <span class="user-score"></span>
           </div>
         </div>
         <!--Contains HighScores-->
@@ -56,5 +72,6 @@
     
 
 	<script src="./assets/script.js"></script>
-  </body>
+  <script src="./assets/highscore.js"></script>
+</body>
 </html>
